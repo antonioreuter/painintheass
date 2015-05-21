@@ -29,8 +29,22 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bower-rails', '~> 0.9.2'
 gem 'angularjs-rails', '~> 1.3.15'
 
+gem 'responders'
+gem 'settingslogic'
+gem 'tinymce-rails'
+gem 'tinymce-rails-langs'
+
+gem 'virtus'
 gem 'active_model_serializers'
 gem 'draper', '~> 1.3.1'
+gem 'enumerize'
+gem 'dalli'
+gem 'newrelic_rpm'
+gem 'nokogiri'
+gem 'jbuilder'
+
+gem 'devise', '~> 3.4'
+gem 'cancan'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -42,18 +56,27 @@ gem 'draper', '~> 1.3.1'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'codeclimate-test-reporter', require: nil
+  gem 'awesome_print'
   gem 'spring'
   gem 'rubocop', require: false
-  gem 'pry'
-  gem 'pry-nav'
+
+  gem 'pry-byebug', platform: :ruby
+  gem 'pry-nav', platform: :jruby
+  gem 'pry-rails'
   gem 'pry-remote'
   gem 'pry-stack_explorer'
-  gem 'codeclimate-test-reporter', require: nil
 
-  gem 'rspec', '~> 3.2.0'
-  gem 'factory_girl', '~> 4.5.0'
+  gem 'rspec-its'
+  gem 'rspec-rails'
+  gem 'rspec-collection_matchers'
 
-  # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 end
 
+group :test do
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers', require: false
+  gem 'simplecov', require: false
+  gem 'simplecov-rcov'
+end
