@@ -41,7 +41,6 @@ gem 'enumerize'
 gem 'dalli'
 gem 'newrelic_rpm'
 gem 'nokogiri'
-gem 'jbuilder'
 
 gem 'devise', '~> 3.4'
 gem 'cancan'
