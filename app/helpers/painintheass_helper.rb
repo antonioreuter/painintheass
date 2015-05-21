@@ -1,0 +1,2 @@
+module PainintheassHelper
+end
