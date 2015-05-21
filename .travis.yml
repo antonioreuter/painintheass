@@ -1,0 +1,14 @@
+language: ruby
+rvm:
+  - 2.1.4
+
+branches:
+  only:
+    - master
+
+gemfile:
+  - Gemfile
+
+addons:
+  code_climate:
+    repo_token: ddffc92f92c80b785c9a195f765f6afdf3ae02f3e6a8259e2643e19f2902d1a6
