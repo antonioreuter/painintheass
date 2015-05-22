@@ -142,6 +142,7 @@ GEM
     orm_adapter (0.5.0)
     parser (2.2.2.3)
       ast (>= 1.1, < 3.0)
+    pg (0.18.2)
     powerpack (0.1.1)
     pry (0.9.0)
       coderay (>= 0.9.8)
@@ -303,6 +304,7 @@ DEPENDENCIES
   jquery-rails
   newrelic_rpm
   nokogiri
+  pg (~> 0.18.2)
   pry (= 0.9)
   rails (= 4.2.1)
   responders
@@ -323,3 +325,6 @@ DEPENDENCIES
   uglifier (>= 1.3.0)
   virtus
   web-console (~> 2.0)
+
+BUNDLED WITH
+   1.10.0.rc
