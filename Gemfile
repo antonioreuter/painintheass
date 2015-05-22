@@ -43,6 +43,9 @@ gem 'nokogiri'
 gem 'devise', '~> 3.4'
 gem 'cancan'
 
+
+gem 'travis', '~> 1.7.6'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -58,11 +61,7 @@ group :development, :test do
   gem 'spring'
   gem 'rubocop', require: false
 
-  gem 'pry-byebug', platform: :ruby
-  gem 'pry-nav', platform: :jruby
-  gem 'pry-rails'
-  gem 'pry-remote'
-  gem 'pry-stack_explorer'
+  gem 'pry', '0.9'
 
   gem 'rspec-its'
   gem 'rspec-rails'
