@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.4'
+ruby '2.1.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -35,8 +35,6 @@ gem 'tinymce-rails'
 gem 'tinymce-rails-langs'
 
 gem 'virtus'
-gem 'active_model_serializers'
-gem 'draper', '~> 1.3.1'
 gem 'enumerize'
 gem 'dalli'
 gem 'newrelic_rpm'
@@ -76,6 +74,4 @@ end
 group :test do
   gem 'factory_girl_rails'
   gem 'shoulda-matchers', require: false
-  gem 'simplecov', require: false
-  gem 'simplecov-rcov'
 end
