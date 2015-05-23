@@ -122,7 +122,6 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.2)
-    kgio (2.9.3)
     launchy (2.4.3)
       addressable (~> 2.3)
     loofah (2.0.2)
@@ -150,6 +149,8 @@ GEM
       method_source (>= 0.6.0)
       ruby_parser (>= 2.0.5)
       slop (~> 1.9.0)
+    puma (2.11.3)
+      rack (>= 1.1, < 2.0)
     pusher-client (0.6.2)
       json
       websocket (~> 1.0)
@@ -186,7 +187,6 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rainbow (2.0.0)
-    raindrops (0.13.0)
     rake (10.4.2)
     rdoc (4.2.0)
       json (~> 1.4)
@@ -278,10 +278,6 @@ GEM
     uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    unicorn (4.9.0)
-      kgio (~> 2.6)
-      rack
-      raindrops (~> 0.7)
     virtus (1.0.5)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
@@ -317,6 +313,7 @@ DEPENDENCIES
   nokogiri
   pg (~> 0.18.2)
   pry (= 0.9)
+  puma (~> 2.11.3)
   rails (= 4.2.1)
   rails_12factor
   responders
@@ -335,6 +332,5 @@ DEPENDENCIES
   travis (~> 1.7.6)
   turbolinks
   uglifier (>= 1.3.0)
-  unicorn
   virtus
   web-console (~> 2.0)
