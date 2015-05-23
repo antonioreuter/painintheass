@@ -42,8 +42,9 @@ gem 'nokogiri'
 gem 'devise', '~> 3.4'
 gem 'cancan'
 
-
 gem 'travis', '~> 1.7.6'
+
+gem 'unicorn'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -55,7 +56,9 @@ gem 'travis', '~> 1.7.6'
 # gem 'capistrano-rails', group: :development
 
 group :production do
+  gem 'rails_12factor'
   gem 'pg', '~> 0.18.2'
+
 end
 
 group :development, :test do
