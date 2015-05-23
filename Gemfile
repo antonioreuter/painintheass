@@ -4,9 +4,7 @@ ruby '2.1.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-gem 'pg', '~> 0.18.2'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -56,6 +54,10 @@ gem 'travis', '~> 1.7.6'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+group :production do
+  gem 'pg', '~> 0.18.2'
+end
+
 group :development, :test do
   gem 'codeclimate-test-reporter', require: nil
   gem 'awesome_print'
@@ -69,6 +71,9 @@ group :development, :test do
   gem 'rspec-collection_matchers'
 
   gem 'web-console', '~> 2.0'
+
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
 end
 
 group :test do
