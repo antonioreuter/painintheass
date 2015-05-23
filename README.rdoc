@@ -4,6 +4,8 @@
 
 {<img src="https://codeclimate.com/github/antonioreuter/painintheass/badges/coverage.svg" />}[https://codeclimate.com/github/antonioreuter/painintheass/coverage]
 
+{<img src="https://heroku-deployment-badges.herokuapp.com/?app=painintheass" />}[https://heroku-badge.herokuapp.com/?app=heroku-badge]
+
 == README
 
 This README would normally document whatever steps are necessary to get the
