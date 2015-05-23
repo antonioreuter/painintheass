@@ -44,8 +44,6 @@ gem 'cancan'
 
 gem 'travis', '~> 1.7.6'
 
-gem 'puma', '~> 2.11.3'
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
