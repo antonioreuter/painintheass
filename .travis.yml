@@ -10,6 +10,11 @@ branches:
 gemfile:
 - Gemfile
 
+notifications:
+  email:
+    - antonioreuter@gmail.com
+    - aandrade@avenuecode.com
+
 addons:
   code_climate:
     repo_token: ddffc92f92c80b785c9a195f765f6afdf3ae02f3e6a8259e2643e19f2902d1a6
@@ -21,3 +26,10 @@ deploy:
   app: painintheass
   on:
     repo: antonioreuter/painintheass
+  run:
+    - "heroku maintenance:on"
+    - "heroku ps:scale worker=0"
+    - "rake db:migrate"
+    - "heroku maintenance:off"
+    - "heroku ps:scale worker=1"
+    - restart
