@@ -44,7 +44,7 @@ gem 'travis', '~> 1.7.6'
 # gem 'capistrano-rails', group: :development
 
 group :production do
-  # gem 'unicorn'
+  gem 'puma', '~> 2.11.3'
   gem 'newrelic_rpm'
   gem 'rails_12factor'
   gem 'pg', '~> 0.18.2'

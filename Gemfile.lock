@@ -149,6 +149,8 @@ GEM
       method_source (>= 0.6.0)
       ruby_parser (>= 2.0.5)
       slop (~> 1.9.0)
+    puma (2.11.3)
+      rack (>= 1.1, < 2.0)
     pusher-client (0.6.2)
       json
       websocket (~> 1.0)
@@ -311,6 +313,7 @@ DEPENDENCIES
   nokogiri
   pg (~> 0.18.2)
   pry (= 0.9)
+  puma (~> 2.11.3)
   rails (= 4.2.1)
   rails_12factor
   responders
