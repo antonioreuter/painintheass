@@ -1,1 +1,1 @@
-angular.module 'painintheass', []
+angular.module 'painintheass', ['reviewsModule']
