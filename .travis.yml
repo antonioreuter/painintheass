@@ -19,8 +19,6 @@ addons:
   code_climate:
     repo_token: ddffc92f92c80b785c9a195f765f6afdf3ae02f3e6a8259e2643e19f2902d1a6
 
-before_deploy: ./before_deploy.sh
-
 deploy:
   provider: heroku
   api_key:
@@ -31,5 +29,3 @@ deploy:
   run:
     - "rake db:migrate"
     - restart
-
-after_deploy: ./after_deploy.sh
