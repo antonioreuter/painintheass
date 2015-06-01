@@ -4,7 +4,14 @@ class ReviewsController < ApplicationController
   # GET /reviews
   # GET /reviews.json
   def index
-    @reviews = Review.all
+    puts "PARAMS: #{request.query_parameters}"
+    @reviews =  if request.query_parameters.present?
+                  Review.where(request.query_parameters)
+                else
+                  Review.all
+                end
+
+    @reviews
   end
 
   # GET /reviews/1
@@ -65,6 +72,10 @@ class ReviewsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_review
       @review = Review.find(params[:id])
+    end
+
+    def search_params
+      params.permit(:title, :review)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

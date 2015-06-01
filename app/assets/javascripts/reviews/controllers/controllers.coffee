@@ -1,1 +1,1 @@
-angular.module 'painintheass.reviews.controller', ['ReviewsController']
+angular.module 'painintheass.reviews.controllers', ['painintheass.reviews.factories']

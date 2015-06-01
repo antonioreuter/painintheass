@@ -1,8 +1,4 @@
-angular.module 'painintheass.reviews.factory', ['ngResource']
-  .factory 'ReviewFactory', ['$resource', ($resource) ->
-    ReviewFactory = () ->
-      @service = $resource('/api/reviews/:id', {id: '@id'})
-      @service
-
-    return new ReviewFactory
+angular.module 'painintheass.reviews.factories', ['ngResource']
+  .factory 'ReviewService', ['$resource', '$location', ($resource, $location) ->
+    return $resource( "/api/reviews/:id", {id: '@id'})
   ]

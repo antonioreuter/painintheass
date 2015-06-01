@@ -56,7 +56,8 @@ group :development, :test do
   gem 'awesome_print'
   gem 'rubocop', require: false
 
-  gem 'pry', '0.9'
+  gem 'pry'
+  gem 'pry-nav'
 
   gem 'rspec-its'
   gem 'rspec-rails'

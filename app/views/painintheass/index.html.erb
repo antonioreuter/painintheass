@@ -10,6 +10,8 @@
 
 <%= link_to 'Add Review', '#' %>
 
+
 <div class="row">
+  <div ng-controller='ListReviewsController'></div>
   <%= render partial: 'reviews/review', collection: @reviews %>
 </div>
